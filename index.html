@@ -1,65 +1,168 @@
-<html lang = "en">
-    <head>
-        <meta charset="utf-8" />
-    <title>Natasha Valluri</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header>
-            <div class="switch">
-              <div class="flicker"></div>
-              <div class="moon"></div>
-            </div>
-          </header>
-        <section class="main">
-            <div class="main-text">
-              <h1>Natasha Valluri</h1>
-              <p>Welcome to my Page!</p>
-              <br/>
-              <p>Constantly curious and conditioned to care, Natasha is driven to build communities and creations around accessible and universal design. She lives in the intersection of code, design and storytelling as a Computational Media student at Georgia Institute of Technology. Forever on the lookout for paneer recipes.</p>
-              <br/>
-              <a href="#footer">contact me</a>
-            </div>
-            <div class="hero-image">
-                <div class="cube" id="react"></div>
-                <div class="cube" id="javascript"></div>
-                <div class="cube" id="html"></div>
-                <div class="cube" id="css"></div>
-              </div>
-        
-            </section>
-            <section class="sub-section">
-                <div class="square" id="revenoo">
-                  <h2>Project 1</h2>
-                  <p>A B2B Payment Tracker</p>
-                  <br/>
-                  <a href="https://github.com/kubowania/Project-04">check it out ></a>
-                </div>
-                <div class="square" id="burgerrator">
-                  <h2>Project 2</h2>
-                  <p>App for Rating Burgers</p>
-                  <br/>
-                  <a href="https://github.com/kubowania">check it out ></a>
-                </div>
-                <div class="square" id="news">
-                  <h2>Project 3</h2>
-                  <p>An App To Track News</p>
-                  <br/>
-                  <a href="https://github.com/kubowania">check it out ></a>
-                </div>
-                <div class="square" id="dates">
-                  <h2>Project 4</h2>
-                  <p>An App For Dates</p>
-                  <br/>
-                  <a href="https://github.com/kubowania">check it out ></a>
-                </div>
-              </section>
-              <footer id="footer">
-                <p>nvalluri3@gatech.edu</p>
-              </footer>
-          
-              <script src="scripts.js"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Natasha</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Mono">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Roboto Mono"}
+.mySlides {display: none}
+</style>
+</head>
+<body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESUME</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">PROJECTS <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Coding</a>
+        <a href="#" class="w3-bar-item w3-button">Design</a>
+        <a href="#" class="w3-bar-item w3-button">Passion Projects</a>
+      </div>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESUME</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/webimages/cs1301.png" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="background-color: black;" >Coding</h3>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/webimages/designn.png" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="background-color: black;">Creating</h3> 
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/webimages/learning1.png" style="width:50%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3 style="background-color: black;">Community</h3>
+    </div>
+  </div>
+
+  <!-- The About Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Who even am I?</h2>
+    <p class="w3-opacity"><i>D&D in ATL</i></p>
+    <p class="w3-justify">A rising second-year at Georgia Tech driven to build communities and creations around accessible and universal design for education. Working in the intersection of code, design and the human psyche as a Computational Media student. Always on the lookout for paneer recipes.</p>
+    <!-- <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Coding</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Creating</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Community</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div> -->
+  </div>
+
+  <!-- The Resume Section -->
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">RESUME</h2>
+      <iframe src="/webimages/NV-2025-Resume.pdf" height="1000" width="600"></iframe>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT ME</h2>
+    <p class="w3-opacity w3-center"><i>Fan? I'm flattered. Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> ATL, US<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: nvalluri3@gatech.edu<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+  <p class="w3-medium">Powered by love and paneer</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
 </html>
